@@ -38,7 +38,7 @@ export default function ZoomInterface({zoomPercentages, onChangeZoom, goToCenter
 
       <div className="zoom-interface--controls">
         <AppButton className={'app-button--symbol'} onClick={() => handleOnClick(operations.Substract)}>-</AppButton>
-        <AppButton>{zoomPercentages}%</AppButton>
+        <AppButton style={{width: '4.5rem'}}>{zoomPercentages}%</AppButton>
         <AppButton className={'app-button--symbol'} onClick={() => handleOnClick(operations.Add)}>+</AppButton>
       </div>
     </div>
