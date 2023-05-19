@@ -1,0 +1,9 @@
+.zoom-interface {
+  @extend .flex-align-center;
+  gap: 0 .5rem;
+
+  &--controls {
+    @extend .flex-align-center;
+    gap: 0 .2rem;
+  }
+}

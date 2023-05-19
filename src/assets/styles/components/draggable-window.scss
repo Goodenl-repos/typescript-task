@@ -1,0 +1,34 @@
+.draggable-window {
+  overflow: hidden;
+  width: 100%;
+  height: 87.5vh;
+
+  position: relative;
+  z-index: 0;
+
+  ::selection {
+    // color: red;
+    background: transparent;
+  }
+
+  &--box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 10000px;
+    height: 10000px;
+
+    position: relative;
+    left: -4400px;
+    top: -4600px;
+
+    background-color: var(--color-light-gray);
+
+    z-index: -1;
+  }
+
+  &--tree {
+    transition: all var(--trans-medium);
+  }
+}

@@ -1,0 +1,32 @@
+.tooltip {
+  padding: .4rem;
+
+  font-size: 1rem;
+  color: var(--color-white);
+  white-space: pre;
+  text-transform: capitalize;
+
+  background-color: var(--color-dark-gray);
+  border-radius: .2rem;
+
+  position: absolute;
+  bottom: calc((100% - .4rem) * -1);
+  left: 0;
+
+  transform: translate(-50%, 0);
+
+  &:after {
+    content: '';
+
+    width: 0.4rem;
+    height: 0.4rem;
+    background-color: var(--color-dark-gray);
+
+    position: absolute;
+    top: -.2rem;
+    left: calc(50% - .2rem);
+    right: 0;
+
+    transform: rotate(45deg);
+  }
+}

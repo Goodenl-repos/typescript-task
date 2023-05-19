@@ -1,0 +1,82 @@
+.clear-btn {
+  appearance: none;
+  background: none;
+  border: none;
+  outline: 0;
+}
+
+
+.app-button {
+  @extend .clear-btn;
+  padding: 1rem;
+
+  max-height: 50px;
+
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--color-dark-gray);
+  text-transform: uppercase;
+
+  background-color: var(--color-white);
+
+  transition: color var(--trans-medium), background-color var(--trans-medium);
+  cursor: pointer;
+
+  position: relative;
+
+  &:hover {
+    background-color: var(--color-dark-gray);
+    color: var(--color-white);
+  }
+
+  &--light-gray {
+    font-size: 1rem;
+    max-height: 100%;
+    padding: 1.5rem;
+    background-color: var(--color-light-gray);
+
+    &:hover {
+      color: var(--color-dark-gray);
+      background-color: darken(#f6f6f6, 10%)
+    }
+  }
+
+  &--secondary {
+    font-size: .9rem;
+    background-color: var(--color-blue);
+    color: var(--color-white);
+  }
+
+  &--symbol {
+    display: flex;
+    align-items: center;
+    font-size: 1.5rem;
+    padding: 1.2rem;
+  }
+
+  &--img {
+    img {
+      width: 1rem;
+      object-fit: cover;
+
+      transition: opacity var(--trans-medium);
+
+      &.hovered {
+        opacity: 0;
+        margin-left: -1rem;
+
+        transition: opacity var(--trans-medium);
+      }
+    }
+
+    &:hover {
+      img {
+        opacity: 0;
+      }
+
+      img.hovered {
+        opacity: 1;
+      }
+    }
+  }
+}
